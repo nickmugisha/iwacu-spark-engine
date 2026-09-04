@@ -18,8 +18,9 @@ export function Hero() {
         />
       )}
       {/* Colour wash + darkening */}
-      <div className="absolute inset-0 -z-10 bg-[linear-gradient(120deg,color-mix(in_oklab,var(--brand-teal)_78%,transparent),color-mix(in_oklab,var(--brand-green)_72%,transparent))] mix-blend-multiply" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink/80 via-ink/40 to-ink" />
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(120deg,color-mix(in_oklab,var(--brand-teal)_55%,transparent),color-mix(in_oklab,var(--brand-green)_45%,transparent))] mix-blend-overlay" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink/70 via-ink/45 to-ink" />
+
 
       <div className="mx-auto w-full max-w-6xl px-5 text-center">
         <motion.div
