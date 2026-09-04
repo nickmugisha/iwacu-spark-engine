@@ -8,19 +8,20 @@
  * ============================================================
  */
 
-import logo from "@/assets/logo.jpg.asset.json";
-import ceo from "@/assets/ceo.png.asset.json";
-import viceCeo from "@/assets/vice-ceo.png.asset.json";
-import cto from "@/assets/cto.png.asset.json";
-import cfo from "@/assets/cfo.jpg.asset.json";
+import logo from "@/assets/logo.jpg";
+import ceo from "@/assets/ceo.png";
+import viceCeo from "@/assets/vice-ceo.png";
+import cto from "@/assets/cto.png";
+import cfo from "@/assets/cfo.jpg";
+import coo from "@/assets/coo.jpg";
+
 
 import heroBackground from "@/assets/hero-bg.jpg";
 import aboutTeamPhoto from "@/assets/about-1.jpg";
 import aboutWorkPhoto from "@/assets/about-2.jpg";
 
 /** Company logo (top bar + footer) */
-export const LOGO_IMAGE: string | null = logo.url;
-
+export const LOGO_IMAGE: string | null = logo;
 /** Big picture behind the title at the top of the page */
 export const HERO_IMAGE: string | null = heroBackground;
 
@@ -30,9 +31,9 @@ export const ABOUT_IMAGE_SMALL: string | null = aboutWorkPhoto;
 
 /** Leadership photos. `null` = empty slot with initials shown instead. */
 export const TEAM_IMAGES: Record<string, string | null> = {
-  ceo: ceo.url,
-  viceCeo: viceCeo.url,
-  cto: cto.url,
-  coo: null, // <-- COO photo goes here (Ihuzuwizera Louna)
-  cfo: cfo.url,
+  ceo: ceo,
+  viceCeo: viceCeo,
+  cto: cto,
+  coo: coo, // Ihuzuwizera Louna
+  cfo: cfo,
 };
