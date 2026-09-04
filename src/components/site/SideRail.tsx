@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { SECTIONS } from "./site-data";
 
 export function SideRail() {
-  const [active, setActive] = useState(SECTIONS[0].id);
+  const [active, setActive] = useState<string>("home");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
