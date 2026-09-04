@@ -12,7 +12,7 @@ export function Contact() {
   ];
 
   return (
-    <section id="contact" className="relative overflow-hidden py-28">
+    <section id="contact" className="relative isolate overflow-hidden py-28">
       <div className="brand-gradient-bg absolute inset-0 -z-20" />
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink via-ink/50 to-ink" />
 
