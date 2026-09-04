@@ -14,7 +14,8 @@ export function Contact() {
   return (
     <section id="contact" className="relative overflow-hidden py-28">
       <div className="brand-gradient-bg absolute inset-0 -z-20" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink via-ink/75 to-ink" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink via-ink/50 to-ink" />
+
 
       <div className="mx-auto max-w-5xl px-5 text-center">
         <Reveal>

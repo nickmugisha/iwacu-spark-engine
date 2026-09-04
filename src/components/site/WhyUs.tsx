@@ -12,8 +12,9 @@ export function WhyUs() {
   return (
     <section id="why-us" className="relative overflow-hidden py-28">
       {/* Smooth teal to green transition, fading into the page on both ends */}
-      <div className="brand-gradient-bg absolute inset-0 -z-20" />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink via-transparent to-ink opacity-90" />
+      <div className="brand-gradient-bg absolute inset-0 -z-20 opacity-90" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink via-ink/45 to-ink" />
+
 
       <div className="mx-auto max-w-6xl px-5">
         <Reveal className="text-center">
