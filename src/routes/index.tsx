@@ -1,24 +1,53 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { Nav } from "@/components/site/Nav";
+import { SideRail } from "@/components/site/SideRail";
+import { Hero } from "@/components/site/Hero";
+import { Stats } from "@/components/site/Stats";
+import { Services } from "@/components/site/Services";
+import { WhyUs } from "@/components/site/WhyUs";
+import { About } from "@/components/site/About";
+import { Team } from "@/components/site/Team";
+import { Testimonials } from "@/components/site/Testimonials";
+import { Faq } from "@/components/site/Faq";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
+
+const title = "Iwacu Tech — Apps & Software Solutions in Burundi";
+const description =
+  "Iwacu Tech builds custom software, websites and mobile apps that solve everyday problems for businesses in Bujumbura and beyond.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-ink">
+      <Nav />
+      <SideRail />
+      <main>
+        <Hero />
+        <Stats />
+        <Services />
+        <WhyUs />
+        <About />
+        <Team />
+        <Testimonials />
+        <Faq />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
